@@ -1,8 +1,13 @@
 function getElementWidth(content, padding, border) {
-border = parseFloat(border);
-padding = parseFloat(padding);
-content = parseFloat(content);
-return content + 2 * (padding + border);
+let Tborder = parseFloat(border);
+let Tpadding = parseFloat(padding);
+let Tcontent = parseFloat(content);
+return Tcontent + 2 * (Tpadding + Tborder);
 }
+
+console.log(getElementWidth("50px", "8px", "4px")); // 74
+console.log(getElementWidth("60px", "12px", "8.5px")); // 101
+console.log(getElementWidth("200px", "0px", "0px")); // 200
+
 
 
